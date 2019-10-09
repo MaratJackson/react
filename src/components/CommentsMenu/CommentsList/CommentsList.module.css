@@ -1,0 +1,11 @@
+.nameUser {
+  font-size: 40px !important;
+  color:black; 
+  float:left;
+  padding-left: 40px; 
+}
+
+.text {
+  font-size: 11px;
+  text-align: left;
+}
