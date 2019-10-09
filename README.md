@@ -3,8 +3,10 @@
 
 Запуск:
 
-  1 npm start
+  1 npm install
 
-  2 Откройте в мобильной адаптаций экрана браузера:  http://localhost:3000/commentsMenu 
+  2 npm start
+
+  3 Откройте в мобильной адаптаций экрана браузера:  http://localhost:3000/commentsMenu 
 
   
