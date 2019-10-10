@@ -1,5 +1,5 @@
 
-Стэк : nodeJs, ReactJs
+Стэк : nodeJs, React, Redux
 
 Запуск:
 
