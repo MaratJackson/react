@@ -3,10 +3,13 @@ import style from './CommentsList.module.css';
 
 
 let CommentsList = (props) => {
-
+    
     let getComments = props.data.map(function(elem){
           return <div>
-                   <p><b className={style.nameUser}>{elem.name}</b></p>
+                   <p>
+                     <small className={style.date}>{elem.date.toLocaleTimeString()}</small>
+                     <b className={style.nameUser}>{elem.name}</b>
+                   </p>
                    <br></br>
                    <ul>
                      <li></li>

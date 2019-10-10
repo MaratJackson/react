@@ -51,3 +51,8 @@ li {
 ::-moz-placeholder {
   font-size: 40px;
 }
+
+a { 
+  text-decoration: none;
+  color: #161616;
+}

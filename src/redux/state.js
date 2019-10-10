@@ -1,5 +1,5 @@
 import createCommentReduce from './createCommentReduce'
-// import CreateComment from '../components/CreateComment/CreateComment'
+import CreateComment from '../components/CreateComment/CreateComment'
 
 let store = {
 
@@ -12,10 +12,10 @@ let store = {
    },
 
    _state : {
-        comments : [   
-          {id:1, name:'Johny', text:"Lalaal lalala lalal alall alalll aallla lallllala lalalalala lalalall laalalalal alllllaallalala allll Lalaal lalala lalal alall alalll aallla lallllala lalalalala lalalall laalalalal alllllaallalala alll"},
-          {id:2, name:'Alexander', text:"Lalaal lalala lalal alall alalll aallla lallllala lalalalala lalalall laalalalal alllllaallalala allll"},
-          {id:3, name:'Vladimir', text:"Lalaal lalala lalal alall alalll aallla lallllala lalalalala lalalall laalalalal alllllaallalala allll"},
+        commentsArr : [   
+          {id:1, name:'Johny', text:"Good products !", date:new Date()},
+          {id:2, name:'Alexander', text:"Hello friends !", date:new Date()},
+          {id:3, name:'Vladimir', text:"We are the world @", date:new Date()},
         ],
         newCommentData:{
           name:'',

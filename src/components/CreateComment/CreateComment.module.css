@@ -11,7 +11,7 @@
     font-family: unset;
 }
   
-.regInputs{
+.createCommentBody{
     text-align: -webkit-left;
 }
   
@@ -37,7 +37,7 @@
       border-radius: 8px;
   }
   
-  @media screen and (min-width: 300px) and (max-width: 1025px){
+@media screen and (min-width: 300px) and (max-width: 1025px){
       .nameInput {
           width: 900px !important;
           height: 130px !important;
@@ -51,7 +51,7 @@
           padding-right: 26px;
 
       }
-      .regInputs {
+      .createCommentBody {
           text-align: center !important;
       }
    
@@ -59,30 +59,7 @@
           margin: 0 auto !important;
           font-size: -webkit-xxx-large !important;
       }
-   
-      #form-login {
-         margin: 0 auto !important;
-         font-size: -webkit-xxx-large !important;
-      }
-   
-      h1 {
-        margin-left: 0px !important;
-        font-size: 100px;
-        text-align: center;
-      }
-   
-      input {
-        width: 950px !important;
-        height: 108px !important;
-        font-size: 50px;
-      }
-   
-      select {
-        width: 900px;
-        height: 100px;
-        font-size: 70px;
-      }
-   
+
       .btnSend {
          width: 900px !important;
          height: 130px !important;
@@ -90,10 +67,6 @@
          border-radius: 8px;
          position: relative;
          top: 136px;
-      }
-   
-      .modal-container {
-        width:500px !important;
       }
 
       .textComment {
@@ -108,12 +81,28 @@
         padding-right: 26px;
         font-family: unset;
         border-radius: 8px;
-     }      
+     }
+           
   }
 
 .nameInput {
   width: 400px;
 }
 
+.triangle {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.2em solid #c4c4c4;;
+  border-top: 0.2em solid #c4c4c4;;
+  transform: rotate(226deg);
+  margin-right: 0.5em;
+  left: 51px;
+  top: 28px;
+  float:left;
+  font-size:104px;
+}
 
    

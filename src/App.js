@@ -5,12 +5,19 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 
 function App(props) {
+  
+  let routes = {
+    comments:props.state.createCommentReduce.comments,
+    dispatch:props.dispatch,
+    newCommentData:props.state.createCommentReduce.newCommentData
+  }
+  
   return (
       <BrowserRouter>
         <div>
-          <h1>Title</h1> 
-          <Route path='/commentsMenu' render={ ()=><CommentsMenu state={props.state.comments} /> } />
-          <Route path='/createComment' render={ () => <CreateComment dispatch={props.dispatch} state={props.state.newCommentData}/>} />
+          <h1></h1> 
+          <Route path='/commentsMenu' render={ ()=> <CommentsMenu commentsArr={routes.comments} /> } />
+          <Route path='/createComment' render={ () => <CreateComment dispatch={routes.dispatch} state={routes.newCommentData}/>} />
         </div>
        </BrowserRouter>
   );

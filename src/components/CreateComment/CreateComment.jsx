@@ -1,9 +1,7 @@
 import React from 'react'
 import style from './CreateComment.module.css';
-import { updateNewCommentText, updateNewCommentName, addNewComment } from '../../redux/state';
+import { updateNewCommentText, updateNewCommentName, addNewComment } from '../../redux/createCommentReduce';
 import {NavLink} from 'react-router-dom'
-
-
 
 
 let CreateComment = (props) => {
@@ -24,10 +22,14 @@ let CreateComment = (props) => {
     }
 
     return (
-       <div className={style.regInputs}>
+       <div className={style.createCommentBody}>
          <div id={style.form}>
+         <NavLink to='/CommentsMenu'>
+           <div className={style.triangle}></div>
+         </NavLink>
+             <br></br>
              <b>Оценить</b>
-             <div>1 2 3 4 5</div>
+             <div></div>
 
              <input 
                className={style.nameInput} 
@@ -47,8 +49,7 @@ let CreateComment = (props) => {
                >
              </textarea>
 
-             <button type="submit" className={style.btnSend} onClick={sendComment}>Отправить</button>
-             <NavLink to='/CommentsMenu'>Нааа</NavLink>
+             <button type="button" className={style.btnSend} onClick={sendComment}>Отправить</button>
          </div>
        </div>
     )

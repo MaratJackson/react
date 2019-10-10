@@ -6,28 +6,12 @@ import style from './CommentsMenu.module.css';
 
 let CommentsMenu = (props) => {
 
-  //  let nameUser = React.createRef()
-
-//    let sayHello = () => {
-//        let name = nameUser.current.value 
-//        props.addUser(name)
-//        nameUser.current.value = ''
-//    }
-
-    // let nameInput = () => {
-    //   let name = nameUser.current.value 
-    //   console.log(name)
-    // }
-
-
-
     return (
-        <div className={style.regInputs}>
+        <div className={style.commentsBody}>
             <div id={style.form}>
               <b className={style.nameForm}>Отзывы магазина</b>
-                <button type="submit" className={style.regBtn}><NavLink to='/CreateComment'>Написать отзыв</NavLink></button> 
-                {/* <NavLink to='/CreateComment'>Нааа</NavLink> */}
-                <CommentsList data={props.state}/>                                                    
+                <button type="submit" className={style.addCommentBtn}><NavLink to='/CreateComment'>Написать отзыв</NavLink></button> 
+                <CommentsList data={props.commentsArr}/>                                                    
             </div>
         </div>
     )
