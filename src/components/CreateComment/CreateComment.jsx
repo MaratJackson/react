@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './CreateComment.module.css';
-import { updateNewCommentText, updateNewCommentName, addNewComment } from '../../redux/createCommentReduce';
 import {NavLink} from 'react-router-dom'
 
 
@@ -9,16 +8,16 @@ let CreateComment = (props) => {
     
     let textUpdate = (event) => {
        let text = event.target.value
-       props.dispatch(updateNewCommentText(text))
+       props.updateText(text)
     }
 
     let nameInputUpdate = (event) => {
       let name = event.target.value
-      props.dispatch(updateNewCommentName(name))
+      props.updateName(name)
     }
 
     let sendComment = () => {
-       props.dispatch(addNewComment())
+       props.addComment()
     }
 
     return (
@@ -36,7 +35,7 @@ let CreateComment = (props) => {
                type="text" 
                placeholder="Укажите ваш никнейм"
                onChange={nameInputUpdate}
-               value={props.state.name}
+               value={props.nameInput}
                >
              </input>
 
@@ -45,7 +44,7 @@ let CreateComment = (props) => {
                className={style.textComment} 
                placeholder="Расскажите что можно улучшить?"
                onChange={textUpdate}
-               value = {props.state.text}
+               value = {props.textInput}
                >
              </textarea>
 
